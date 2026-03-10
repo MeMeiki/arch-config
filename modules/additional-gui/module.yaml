@@ -1,0 +1,12 @@
+description: Other gui apps lol
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run before installing packages (optional)
+pre_install_hook: ""
+
+# Script to run after installing packages (optional)
+post_install_hook: ""
+
+dotfiles_sync: true

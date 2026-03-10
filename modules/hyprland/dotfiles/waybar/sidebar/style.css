@@ -1,0 +1,25 @@
+* {
+    font-family: "dmserifdisplay", serif;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 0 0px;
+    margin: 0 0px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.rightbar {
+        background-color: rgba(100, 0, 255, 0);
+        color: @theme_text_color;
+}
+
+.leftbar {
+    background-color: rgba(100, 0, 255, 0);
+    color: @theme_text_color;
+}
+
+.module {
+    color: @theme_text_color;
+    margin: 0 0px;
+    padding: 10 0px;
+}
+

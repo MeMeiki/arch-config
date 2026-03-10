@@ -1,0 +1,84 @@
+[
+    {
+        "name": "bottombar",
+        "layer": "middle",
+        "position": "bottom",
+        "height": 23,
+	"modules-right": [
+            "tray",
+	    //"hyprland/workspaces",
+	    "clock"
+        ],
+        "modules-center": [
+            "hyprland/workspaces"
+	    //"tray"
+        ],
+        "modules-left": [
+            "cpu",
+            "memory",
+	    "temperature"
+            //"hyprland/window"
+        ],
+    "custom/niflveil": {
+        "format": "{{class}}",
+        "exec": "niflveil show",
+        "on-click": "niflveil restore-all",
+        "return-type": "json",
+        "interval": "once",
+        "signal": 8
+        },
+        "hyprland/window": {
+	     "format": "{}",
+            "icon": true,
+            "icon-size": 14
+        },
+        "tray": {
+            "icon-size": 18,
+            "spacing": 10
+        },
+        "hyprland/workspaces": {
+            "on-click": "activate",
+	    "move-to-monitor": true,
+
+	    "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor +1",
+	    "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor -1",
+
+	    "all-outputs": true,
+
+            "persistent-workspaces": {
+                "*": [ 1,2,3,4,5 ]
+            },
+            "format": "{name}{icon}",
+            "format-icons": {
+	       "active": "",
+               "visible": "",
+               "default": "",
+               "empty": ""
+            },
+        },
+        "clock": {
+            "interval": 1,
+            "format": "{:%H:%M}",
+            "format-alt": "{:%d/%m/%y}",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        },
+        "cpu": {
+            "format": "CPU: {usage}%",
+            "tooltip": false
+        },
+        "disk": {
+            "format": "DISK: {}%",
+            "tooltip-format": "{used} / {total} used"
+        },
+        "memory": {
+            "format": "MEMORY: {}%",
+            "tooltip-format": "{used:0.1f}G / {total:0.1f}G used"
+        },
+        "temperature": {
+            "critical-threshold": 80,
+            "format": "TEMP: {temperatureC}°C",
+            "format-icons": ["", "", "", "", ""]
+        },
+    },
+]
+

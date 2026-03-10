@@ -1,0 +1,13 @@
+packages:
+- kitty
+- qimgv-git
+- mpv
+- gtk3
+- gtk4
+
+- thunar
+- gvfs
+- gvfs-mtp
+- gvfs-afc
+- gvfs-dnssd
+

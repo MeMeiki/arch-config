@@ -1,0 +1,12 @@
+description: My hyprland config with all dependencies.
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run before installing packages (optional)
+pre_install_hook: ""
+
+# Script to run after installing packages (optional)
+post_install_hook: "postinstall.sh"
+
+dotfiles_sync: true

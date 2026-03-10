@@ -1,0 +1,9 @@
+# System packages merged from host (auto-generated, host-specific)
+config.yaml
+state/
+state/*.yaml
+system-packages.yaml
+state/installed.yaml
+state/hooks-executed.yaml
+modules/declared-packages.yaml
+

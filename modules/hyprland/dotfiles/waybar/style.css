@@ -1,0 +1,61 @@
+/*
+* {
+    font-family: "DejaVuSerifCondensed", bold;
+    font-weight: 800;
+    font-size: 17px;
+    padding: 0 0px;
+    margin: 0 0px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.bottombar {
+        background-color: rgba(0, 0, 0, 0.4);
+     color: @theme_text_color;
+}
+
+.module {
+    margin: 0 0px;
+    padding: 0 10px;
+}
+
+#workspaces button {
+     padding: 0 2px;
+     color: #adadad;
+}
+
+#workspaces button.focused {
+     padding: 0 10px;
+     color: #ffffff;
+}
+*/
+
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: "DejaVuSerifCondensed", bold;
+  font-weight: 800;
+  font-size: 17px;
+  min-height: 0;
+}
+
+.bottombar {
+     background-color: rgba(0, 0, 0, 0.4);
+     color: @theme_text_color;
+}
+
+.module {
+    margin: 0 0px;
+    padding: 0 10px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+     box-shadow: inherit;
+     text-shadow: inherit;
+}
+
+
+#workspaces button.focused, #workspaces button.active, #workspaces button:hover {
+  /*    box-shadow: inset 0 -2px #c9545d; */
+  color:#c9545d;
+}
+

@@ -1,0 +1,177 @@
+[
+    {
+        "name": "rightbar",
+        "layer": "middle",
+        "position": "right",
+        "width": 25,
+        "output": "HDMI-A-1",
+        "modules-right": [
+            //"tray",
+	    "hyprland/workspaces",
+	    "clock"
+        ],
+        "modules-center": [
+            //"hyprland/workspaces",
+	    "tray"
+        ],
+        "modules-left": [
+            "cpu",
+            //"memory",
+	    "temperature"
+            //"hyprland/window"
+        ],
+    "custom/niflveil": {
+        "format": "{{class}}",
+        "exec": "niflveil show",
+        "on-click": "niflveil restore-all",
+        "return-type": "json",
+        "interval": "once",
+        "signal": 8
+        },
+        "hyprland/window": {
+            "rotate": 270,
+            "format": "{}",
+            "icon": true,
+            "icon-size": 14
+        },
+        "tray": {
+            "icon-size": 18,
+            "spacing": 10
+        },
+        "hyprland/workspaces": {
+            "on-click": "activate",
+	    "move-to-monitor": true,
+
+	    "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor +1",
+	    "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor -1",
+
+	    "all-outputs": true,
+
+            "persistent-workspaces": {
+                "*": [ 1,2,3,4,5 ]
+            },
+            "format": "{name}{icon}",
+            "format-icons": {
+                "visible": "X",
+                "default": "",
+                "empty": ""
+            },
+        },
+        "clock": {
+            "rotate": 270,
+            "interval": 1,
+            "format": "{:%H:%M}",
+            "format-alt": "{:%d/%m/%y}",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        },
+        "cpu": {
+            "rotate": 270,
+            "format": "CPU: {usage}%",
+            "tooltip": false
+        },
+        "disk": {
+            "rotate": 270,
+            "format": "DISK: {}%",
+            "tooltip-format": "{used} / {total} used"
+        },
+        "memory": {
+            "rotate": 270,
+            "format": "MEMORY: {}%",
+            "tooltip-format": "{used:0.1f}G / {total:0.1f}G used"
+        },
+        "temperature": {
+            "rotate": 270,
+            "critical-threshold": 80,
+            "format": "TEMP: {temperatureC}°C",
+            "format-icons": ["", "", "", "", ""]
+        },
+    },
+    {
+        "name": "leftbar",
+        "layer": "middle",
+        "position": "left",
+        "width": 25,
+        "output": "DVI-D-1",
+        "modules-right": [
+            //"tray",
+	    "hyprland/workspaces",
+	    "clock"
+	],
+        "modules-center": [
+            //"hyprland/workspaces",
+	    "tray"
+        ],
+        "modules-left": [
+            "cpu",
+            //"memory",
+	    "temperature"
+            //"hyprland/window"
+        ],
+    "custom/niflveil": {
+        "format": "{{class}}",
+        "exec": "niflveil show",
+        "on-click": "niflveil restore-all",
+        "return-type": "json",
+        "interval": "once",
+        "signal": 8
+        },
+        "hyprland/window": {
+            "rotate": 270,
+            "format": "{}",
+            "icon": true,
+            "icon-size": 14
+        },
+        "tray": {
+            "icon-size": 18,
+            "spacing": 10
+        },
+        "hyprland/workspaces": {
+            "on-click": "activate",
+	    "move-to-monitor": true,
+
+	    "on-scroll-up": "hyprctl dispatch focusworkspaceoncurrentmonitor +1",
+	    "on-scroll-down": "hyprctl dispatch focusworkspaceoncurrentmonitor -1",
+
+	    "all-outputs": false,
+
+            "persistent-workspaces": {
+                "*": [ 1,2,3,4,5 ]
+            },
+            "format": "{name}{icon}",
+            "format-icons": {
+                "visible": "X",
+                "default": "",
+                "empty": ""
+            },
+        },
+        "clock": {
+            "rotate": 270,
+            "interval": 1,
+            "format": "{:%H:%M}",
+            "format-alt": "{:%d/%m/%y}",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        },
+        "cpu": {
+            "rotate": 270,
+            "format": "CPU: {usage}%",
+            "tooltip": false
+        },
+        "disk": {
+            "rotate": 270,
+            "format": "DISK: {}%",
+            "tooltip-format": "{used} / {total} used"
+        },
+        "memory": {
+            "rotate": 270,
+            "format": "MEMORY: {}%",
+            "tooltip-format": "{used:0.1f}G / {total:0.1f}G used"
+        },
+        "temperature": {
+            "rotate": 270,
+            "critical-threshold": 80,
+            "format": "TEMP: {temperatureC}°C",
+            "format-icons": ["", "", "", "", ""]
+        },
+    }
+]
+

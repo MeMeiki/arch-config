@@ -1,0 +1,44 @@
+configuration {
+  modes: [ combi ];
+  combi-modes: [ window, drun, run ];
+}
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+* {
+    border-color:                rgba ( 100, 100, 255, 100 % );
+    separatorcolor:              rgba ( 255, 255, 255, 100 % );
+    foreground:                  rgba ( 255, 255, 255, 100 % );
+    selected-normal-background:  rgba ( 80, 50, 255, 50 % );
+    selected-normal-foreground:  rgba ( 255, 255, 255, 100 % );
+    background:                  rgba ( 0, 0, 0, 70 % );
+    background-color:            rgba ( 0, 0, 0, 0 % );
+    none:                  rgba ( 0, 0, 0, 0 % );
+    font:                        "JetBrainsMonoNerdFontMono";
+}
+configuration {
+  show-icons:         true;
+}
+window {
+    background-color: @background;
+    border:           1;
+    padding:          6;
+    height:       803;
+    width:       500;
+    border-radius: 6;
+}
+mainbox {
+    background-color: @none;
+}
+message, textbox, inputbar, case-indicator, entry, prompt, button, textbox-prompt-colon, element-icon, {
+    background-color: @none;
+}
+listview {
+    border:       0px 0px 0px ;
+    padding:      5px 5px 5px ;
+    spacing:      2px ;
+    background-color: @none;
+}
+scrollbar {
+    handle-color: @foreground;
+    background-color: @none;
+    handle-width: 2;
+}

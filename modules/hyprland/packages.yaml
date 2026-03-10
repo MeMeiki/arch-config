@@ -1,0 +1,7 @@
+packages:
+- hyprland
+- xdg-desktop-portal-hyprland
+
+- awww-bin
+- rofi
+- wlogout

@@ -1,0 +1,7 @@
+description: good fonts and theme stuff
+
+packages:
+  - ttf-dejavu
+  - ttf-jetbrains-mono-nerd
+  - xcursor-simp1e
+

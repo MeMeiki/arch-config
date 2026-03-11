@@ -12,6 +12,9 @@ packages:
   - linux
   - linux-firmware
 
+  # Display manager
+  - ly
+
   # Essential tools
   - git
   - nvim

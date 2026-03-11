@@ -1,0 +1,14 @@
+return {
+    description = "GRUB bootloader",
+    
+    packages = {
+        "grub",
+        "efibootmgr",
+        "os-prober",
+    },
+    
+    services = {
+        enabled = {},
+        disabled = {},
+    },
+}

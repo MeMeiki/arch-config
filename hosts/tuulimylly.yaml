@@ -10,6 +10,8 @@ enabled_modules:
 - base
 - fonts
 - declared-packages
+- boot/ly
+- boot/grub
 packages: []
 exclude: []
 additional_packages: []

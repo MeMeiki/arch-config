@@ -2,4 +2,6 @@ packages:
 - calc
 - fish
 - playerctl
-- ydotool
+- ssh
+- docker
+- docker-compose

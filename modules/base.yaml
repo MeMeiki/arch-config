@@ -17,6 +17,8 @@ packages:
 
   # Essential tools
   - git
+  - make
+  - cmake
   - nvim
 
   # dcli dependencies

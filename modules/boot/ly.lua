@@ -7,7 +7,7 @@ return {
     
     services = {
         enabled = {
-            "ly",
+            "ly@tty2.service",
         },
         disabled = {
 	     "sddm"

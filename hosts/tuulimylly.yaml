@@ -12,6 +12,7 @@ enabled_modules:
 - declared-packages
 - boot/ly
 - boot/grub
+- themes
 packages: []
 exclude: []
 additional_packages: []

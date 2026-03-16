@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=oomox-arc-dark
+Comment=Generated with Themix Base16 plugin
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=oomox-arc-dark
+GtkTheme=oomox-arc-dark
+IconTheme=oomox-arc-dark
+MetacityTheme=oomox-arc-dark

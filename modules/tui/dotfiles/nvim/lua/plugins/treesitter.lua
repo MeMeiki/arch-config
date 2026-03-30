@@ -9,7 +9,7 @@ return {
 	treesitter.install = { "bash", "c", "css", "cpp", "go", "html", "java", "javascript", "json", "lua", "markdown", "markdown_inline", "python", "rust", "ron", "tsx", "typescript" },
 
     vim.api.nvim_create_autocmd('FileType', {
-      pattern = { "bash", "c", "css", "cpp", "go", "html", "java", "javascript", "json", "lua", "markdown", "markdown_inline", "python", "rust", "tsx", "typescript" },
+      pattern = { "bash", "c", "css", "cpp", "go", "html", "java", "javascript", "json", "lua", "markdown", "markdown_inline", "python", "rust", "ron", "tsx", "typescript" },
 
       callback = function()
         vim.treesitter.start()

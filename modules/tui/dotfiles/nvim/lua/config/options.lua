@@ -19,6 +19,8 @@ local options = {
     smartcase = true, --but do not ignore if caps are used
 }
 
+vim.opt.wrap = false
+
 for k, v in pairs(options) do
     vim.opt[k] = v
 end

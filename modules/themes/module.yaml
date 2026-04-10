@@ -11,5 +11,5 @@ post_install_hook: ""
 
 dotfiles_sync: true
 dotfiles:
-  - source: dotfiles/.themes/
+  - source: .themes
     target: ~/.themes
